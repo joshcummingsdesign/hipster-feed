@@ -10,5 +10,6 @@ Display your latest Instagram posts on your WordPress site.
 
 You can modify ```public/partials/hipstr-public-content.php``` to change what the front end looks like.
 
-To change how many images to query, see ```public/partials/app.php``` arount line 30.
-```$media = $instagram->getUserMedia( 'self', 8 ); //Returns 8 entries for the logged in user```
+To change how many images to query, see ```public/partials/app.php``` arount line 30. The default is set to 8.
+
+```$media = $instagram->getUserMedia( 'self', 8 );```
