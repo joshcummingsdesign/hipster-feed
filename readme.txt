@@ -1,38 +1,18 @@
-=== HipserFeed ===
+=== HipsterFeed ===
 Contributors: joshcummingsdesign
 Donate link: http://www.joshcummingsdesign.com
 Tags: instagram, photos, carousel, slider, hipster, feed, touch, swipe, recent, pictures, slideshow, images
 Requires at least: 4.2
-Tested up to: 4.3.1
+Tested up to: 4.4.2
 Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Tagline goes here.
+Easily authenticate using the Instagram API and add your Instagram images to your site using a shortcode.
 
 == Description ==
 
-[HipserFeed](http://example.com) is a plugin for WordPress.
-
-**Features include:**
-
-* List the features here.
-
-== Installation ==
-
-1. Install either via the WordPress.org plugin directory, or by uploading the files to your server.
-
-[youtube http://www.youtube.com]
-
-== Frequently Asked Questions ==
-
-= What kinds of questions will people ask? =
-
-Write your answer here.
-
-== Screenshots ==
-
-1. List screenshots here.
+[HipserFeed](https://github.com/joshcummingsdesign/hipster-feed) is a plugin for WordPress that allows for easy Instagram integration.
 
 == Changelog ==
 

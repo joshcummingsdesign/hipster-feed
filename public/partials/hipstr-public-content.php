@@ -8,18 +8,12 @@
 
 <?php include 'app.php'; ?>
 
-<?php if ( isset( $options['token'] ) ) : ?>
+<?php if ( !empty( $options['token'] ) ) : ?>
 
-<div class="owl-wrapper">
-	<div class="owl-carousel">
+		<?php foreach ($image_data as $link => $img_url) : ?>
 
-		<?php foreach ($image_data as $a => $img) : ?>
-
-			<div><a href="<?php echo $a; ?>"><img src="<?php echo $img; ?>" alt="instagram photo"></a></div>
+			<div><a href="<?php echo $link; ?>"><img src="<?php echo $img_url; ?>" alt="instagram photo"></a></div>
 
 		<?php endforeach; ?>
-
-	</div>
-</div>
 
 <?php endif; ?>

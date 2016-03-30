@@ -21,7 +21,7 @@
 
 				<?php include 'app.php'; ?>
 
-				<?php if ( isset( $options['token'] ) ) : ?>
+				<?php if ( !empty( $options['token'] ) ) : ?>
 
 					<h2>Logged in as <?php echo $options['token']->user->username; ?></h2>
 					<img src="<?php echo $options['token']->user->profile_picture; ?>" alt="profile picture">
@@ -29,8 +29,18 @@
 
 				<?php else : ?>
 
-					<h2>Logged out</h2>
-					<a href="https://api.instagram.com/oauth/authorize/?client_id=7ededb3e85e6482285bb01087356d7e1&redirect_uri=<?php echo WEBSITE_URL; ?>&response_type=code" class="button-primary">Connect to Instagram</a>
+					<p><label for="hipstr-client-id">Client ID</label></p>
+					<p><input id="hipstr-client-id" name="client-id" type="text" value="<?php if (!empty($options['client_id'])) { echo $options['client_id']; } ?>"></p>
+					<p><label for="hipstr-client-secret">Client Secret</label></p>
+					<p><input id="hipstr-client-secret" name="client-secret" type="text" value="<?php if (!empty($options['client_secret'])) { echo $options['client_secret']; } ?>"></p>
+
+					<button id="hipstr-login" class="button-secondary">Save</button>
+
+					<?php if ( !empty( $options['client_id'] ) && !empty( $options['client_secret'] ) ) : ?>
+
+						<a href="https://api.instagram.com/oauth/authorize/?client_id=<?php echo $options['client_id']; ?>&redirect_uri=<?php echo WEBSITE_URL; ?>&response_type=code" class="button-primary">Connect to Instagram</a>
+
+					<?php endif; ?>
 
 				<?php endif; ?>
 

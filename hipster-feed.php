@@ -17,6 +17,7 @@ Domain Path: /languages
 /****************************************/
 
 define('HIPSTR_DIR', plugin_dir_path( __FILE__ ) );
+define( 'WEBSITE_URL', get_home_url() . '/wp/wp-admin/admin.php?page=hipster-feed' );
 
 /*****************************************
 * Installation
