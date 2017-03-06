@@ -39,7 +39,7 @@ class Plugin
     private function define_frontend_hooks() {
         $plugin_frontend = new Frontend($this->plugin_slug, $this->version, $this->option_name);
         $this->loader->add_action('wp_enqueue_scripts', $plugin_frontend, 'assets');
-        $this->loader->add_action('wp_footer', $plugin_frontend, 'render');
+        $this->loader->add_shortcode('hipster-feed', $plugin_frontend, 'render');
     }
 
     public function run() {
