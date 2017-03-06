@@ -3,7 +3,7 @@
  * Plugin Name:       Hipster Feed
  * Plugin URI:        http://example.com/hipster-feed-uri/
  * Description:       A simple way to show your latest Instagram posts on your WordPress site.
- * Version:           1.2
+ * Version:           1.2.1
  * Author:            Josh Cummings
  * Author URI:        https://joshcummingsdesign.com
  * License:           GPL-2.0+
