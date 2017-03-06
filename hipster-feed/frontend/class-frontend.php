@@ -53,11 +53,13 @@ class Frontend
             $instas = $data->items;
 
             // View
+            $output = '';
             if (locate_template('partials/' . $this->plugin_slug . '.php')) {
                 require locate_template('partials/' . $this->plugin_slug . '.php');
             } else {
                 require plugin_dir_path(dirname(__FILE__)).'frontend/partials/view.php';
             }
+            return $output;
         }
     }
 }

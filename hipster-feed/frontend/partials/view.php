@@ -1,18 +1,16 @@
-<div class="hipster-feed-slider owl-carousel">
+<?php
 
-    <?php foreach ($instas as $insta) : ?>
+$output .= '<div class="hipster-feed-slider owl-carousel">';
 
-        <?php
+    foreach ($instas as $insta) {
         $type    = $insta->type;
         $link    = $insta->link;
         $image   = $insta->images->standard_resolution->url;
         $caption = $insta->caption->text;
-        ?>
 
-        <?php if ($type === 'image') : ?>
-            <div class="item"><a href="<?= $link ?>" target="_blank"><img src="<?= $image ?>" alt="<?= $caption ?>"></a></div>
-        <?php endif; ?>
+        if ($type === 'image') {
+            $output .= '<div class="item"><a href="' . $link . '" target="_blank"><img src="' . $image . '" alt="' . $caption . '"></a></div>';
+        }
+    }
 
-    <?php endforeach; ?>
-
-</div>
+$output .= '</div>';
