@@ -16,10 +16,10 @@ A simple way to show your latest Instagram posts on your WordPress site.
 == Changelog ==
 
 = 1.2.2 =
-* Fixes admin CSS
+* Fixes admin CSS.
 
 = 1.2.1 =
-* Fixes a shortcode bug
+* Fixes a shortcode bug.
 
 = 1.2 =
 * Adds shortcode functionality.
@@ -28,15 +28,21 @@ A simple way to show your latest Instagram posts on your WordPress site.
 * Switches to new Instagram API.
 
 = 1.0 =
-* Initial release
+* Initial release.
 
 == Upgrade Notice ==
 
+= 1.2.2 =
+* Fixes admin CSS.
+
+= 1.2.1 =
+* Fixes a shortcode bug.
+
 = 1.2 =
-Hipster Feed is now powered by shortcode
+* Adds shortcode functionality.
 
 = 1.1 =
-Hipster Feed now uses the new Instagram API.
+* Switches to new Instagram API.
 
 = 1.0 =
-Thank you for downloading the initial release of HipsterFeed!
+* Initial release.
