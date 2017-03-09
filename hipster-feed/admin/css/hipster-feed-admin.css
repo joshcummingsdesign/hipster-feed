@@ -2,27 +2,27 @@
 =            Admin Styles            =
 ====================================*/
 
-.metabox-holder input[type=text],
-.metabox-holder textarea {
+.hipster-feed-wrap .metabox-holder input[type=text],
+.hipster-feed-wrap .metabox-holder textarea {
   width: 100%;
   display: block;
 }
 
-.metabox-holder input {
+.hipster-feed-wrap .metabox-holder input {
   max-width: 250px;
 }
 
-.metabox-holder textarea {
+.hipster-feed-wrap .metabox-holder textarea {
   max-width: 500px;
 }
 
-.spinner {
+.hipster-feed-wrap .spinner {
   float: left;
   margin-top: 25px;
   margin-left: 20px;
 }
 
-.submit-wrap .submit {
+.hipster-feed-wrap .submit-wrap .submit {
   float: left;
   padding-top: 0;
 }
