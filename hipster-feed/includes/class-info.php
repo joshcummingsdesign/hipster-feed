@@ -19,7 +19,7 @@ class Info
      *
      * @var string
      */
-    const VERSION = '1.2.2';
+    const VERSION = '1.2.3';
 
     /**
      * The nae for the entry in the options table.
@@ -33,7 +33,7 @@ class Info
      *
      * @var string
      */
-    const UPDATE_URL = 'https://update.madebygrizzly.com/';
+    const UPDATE_URL = 'https://update.madebygrizzly.com/wp-update-server/';
 
     /**
      * Retrieves the plugin title from the main plugin file.
