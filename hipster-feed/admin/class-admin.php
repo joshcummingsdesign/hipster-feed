@@ -26,7 +26,7 @@ class Admin
         $this->admin_slug = 'options-general.php';
         $this->admin_page_url = get_admin_url() . $this->admin_slug . '?page=' . $this->plugin_slug;
         $this->auth_uri = 'https://api.instagram.com/oauth/authorize/';
-        $this->token_uri = 'https://api.instagram.com/oauth/access_token';history.replaceState(null, null, origin + pathname + pageQuery);
+        $this->token_uri = 'https://api.instagram.com/oauth/access_token';
     }
 
     /**
