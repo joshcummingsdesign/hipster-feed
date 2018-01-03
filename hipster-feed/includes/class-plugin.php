@@ -34,6 +34,7 @@ class Plugin
         $this->loader->add_action('admin_enqueue_scripts', $plugin_admin, 'assets');
         $this->loader->add_action('admin_init', $plugin_admin, 'register_settings');
         $this->loader->add_action('admin_menu', $plugin_admin, 'add_menus');
+        $this->loader->add_action('wp_ajax_logout', $plugin_admin, 'logout');
     }
 
     private function define_frontend_hooks() {

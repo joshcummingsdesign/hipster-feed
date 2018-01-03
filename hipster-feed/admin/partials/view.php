@@ -3,6 +3,7 @@
     <div id="poststuff">
         <div id="post-body" class="metabox-holder columns-2">
             <div id="post-body-content">
+                <?= $authentication ?>
                 <form action="options.php" method="post">
                     <?php settings_fields($settings_group); ?>
                     <?= $fields ?>

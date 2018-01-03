@@ -26,3 +26,11 @@
   float: left;
   padding-top: 0;
 }
+
+#hipster-feed-authenticate.is-hidden {
+  display: none;
+}
+
+#hipster-feed-profile.is-hidden {
+  display: none;
+}

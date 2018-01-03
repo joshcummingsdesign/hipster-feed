@@ -44,13 +44,13 @@ class Frontend
 
         // Model
         $settings = $this->settings;
-        $user     = $settings['user'] ?? '';
 
-        if ($user) {
+        if (!empty($settings['access_token'])) {
+
             // Controller
-            $url    = sprintf('https://www.instagram.com/%s/media', $user);
-            $data   = json_decode(file_get_contents($url));
-            $instas = $data->items;
+            $url    = sprintf('https://api.instagram.com/v1/users/self/media/recent/?access_token=%s', $settings['access_token']);
+            $json   = json_decode(file_get_contents($url));
+            $instas = $json->data;
 
             // View
             $output = '';
